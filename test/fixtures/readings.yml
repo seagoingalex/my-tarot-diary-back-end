@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  read_requester_id: 1
+  read_requester_type: MyString
+  reader_id: 1
+  reader_type: MyString
+  drawing_type: MyString
+  question: MyString
+  rating: 1.5
+  descriptors: MyString
+  notes: MyString
+
+two:
+  read_requester_id: 1
+  read_requester_type: MyString
+  reader_id: 1
+  reader_type: MyString
+  drawing_type: MyString
+  question: MyString
+  rating: 1.5
+  descriptors: MyString
+  notes: MyString

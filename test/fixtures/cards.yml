@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  img: MyString
+  img_reversed: MyString
+  suit: MyString
+  suit_thumbnail: MyString
+  type: 
+  name: MyString
+  value: MyString
+  value_int: 1
+  meaning_up: MyString
+  meaning_rev: MyString
+  desc_up: MyString
+  desc_rev: MyString
+
+two:
+  img: MyString
+  img_reversed: MyString
+  suit: MyString
+  suit_thumbnail: MyString
+  type: 
+  name: MyString
+  value: MyString
+  value_int: 1
+  meaning_up: MyString
+  meaning_rev: MyString
+  desc_up: MyString
+  desc_rev: MyString
