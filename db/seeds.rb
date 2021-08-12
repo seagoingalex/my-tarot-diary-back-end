@@ -19,38 +19,105 @@ puts "Seeding Users..."
 
 User.create!([
     {
-        username: "alcal",
+        username: "puddin",
         password: "1234",
-        first_name: "Alex",
-        last_name: "Calvert"
+        first_name: "Harley",
+        last_name: "Quinn"
+    },
+    {
+        username: "bloodsport",
+        password: "1234",
+        first_name: "Robert",
+        last_name: "DuBois"
+    },
+    {
+        username: "peacemaker",
+        password: "1234",
+        first_name: "Christopher",
+        last_name: "Smith"
+    },
+    {
+        username: "squadleader",
+        password: "1234",
+        first_name: "Rick",
+        last_name: "Flag"
+    },
+    {
+        username: "nanaue",
+        password: "1234",
+        first_name: "King",
+        last_name: "Shark"
+    },
+    {
+        username: "ratcatcher",
+        password: "1234",
+        first_name: "Cleo",
+        last_name: "Cazo"
     }
 ])
 
 user1 = User.all[0]
+user2 = User.all[1]
+user3 = User.all[2]
+user4 = User.all[3]
+user5 = User.all[4]
+user6 = User.all[5]
 
 puts "Seeding Profiles..."
 
-PersonalProfile.create!(user_id: 1)
-PublicProfile.create!(user_id: 1)
+PersonalProfile.create!(user_id: 1); PublicProfile.create!(user_id: 1); personal1 = PersonalProfile.all[0]; public1 = PublicProfile.all[0]
 
-personal1 = PersonalProfile.all[0]
-public1 = PublicProfile.all[0]
+PersonalProfile.create!(user_id: 2); PublicProfile.create!(user_id: 2); personal2 = PersonalProfile.all[1]; public2 = PublicProfile.all[1]
+
+PersonalProfile.create!(user_id: 3); PublicProfile.create!(user_id: 3); personal3 = PersonalProfile.all[2]; public3 = PublicProfile.all[2]
+
+PersonalProfile.create!(user_id: 4); PublicProfile.create!(user_id: 4); personal4 = PersonalProfile.all[3]; public4 = PublicProfile.all[3]
+
+PersonalProfile.create!(user_id: 5); PublicProfile.create!(user_id: 5); personal5 = PersonalProfile.all[4]; public5 = PublicProfile.all[4]
+
+PersonalProfile.create!(user_id: 6); PublicProfile.create!(user_id: 6); personal6 = PersonalProfile.all[5]; public6 = PublicProfile.all[5]
 
 puts "Seeding Friends..."
 
 Friend.create!([
     {
-        first_name: "Nic",
-        last_name: "Varela"
+        first_name: "Bruce",
+        last_name: "Wayne"
     },
     {
-        first_name: "Ryan",
-        last_name: "Clark"
+        first_name: "Clark",
+        last_name: "Kent"
+    },
+    {
+        first_name: "Diana",
+        last_name: "Prince"
+    },
+    {
+        first_name: "Barry",
+        last_name: "Allen"
+    },
+    {
+        first_name: "J'onn",
+        last_name: "J'onzz"
+    },
+    {
+        first_name: "John",
+        last_name: "Stewart"
+    },
+    {
+        first_name: "Kendra",
+        last_name: "Saunders"
     }
+
 ])
 
 friend1 = Friend.all[0]
 friend2 = Friend.all[1]
+friend3 = Friend.all[2]
+friend4 = Friend.all[3]
+friend5 = Friend.all[4]
+friend6 = Friend.all[5]
+friend7 = Friend.all[6]
 
 puts "Seeding Cards..."
 
@@ -1253,15 +1320,55 @@ Reading.create!([
         rating: 6,
         descriptors:"Relieved!",
         notes:"Thank goodness!"
-    }
+    },
+    {
+        read_requester_id: personal1.id,
+        read_requester_type: "PersonalProfile",
+        reader_id: personal1.id,
+        reader_type: "PersonalProfile",
+        drawing_type:"Daily Drawing",
+        question:"What's the day look like?",
+        rating: 8,
+        descriptors:"Fine!",
+        notes:"I should take stock of my situation"
+    },
+    {
+        read_requester_id: personal1.id,
+        read_requester_type: "PersonalProfile",
+        reader_id: personal1.id,
+        reader_type: "PersonalProfile",
+        drawing_type:"Daily Drawing",
+        question:"What's the day look like?",
+        rating: 4,
+        descriptors:"Concerned!",
+        notes:"I need to fight my imposter syndrome today"
+    },
+    {
+        read_requester_id: personal1.id,
+        read_requester_type: "PersonalProfile",
+        reader_id: personal1.id,
+        reader_type: "PersonalProfile",
+        drawing_type:"Daily Drawing",
+        question:"What's the day look like?",
+        rating: 7,
+        descriptors:"Curious!",
+        notes:"I think it's time I cut myself a break and celebrate!"
+    },
+
 ])
 
 reading1 = Reading.all[0]
 reading2 = Reading.all[1]
+reading3 = Reading.all[2]
+reading4 = Reading.all[3]
+reading5 = Reading.all[4]
 
 puts "Seeding Card Drawings..."
 
-CardDrawing.create!(reading_id: reading1.id, card_id: card1.id)
-CardDrawing.create!(reading_id: reading2.id, card_id: card1.id)
+CardDrawing.create!(reading_id: reading1.id, card_id: 8)
+CardDrawing.create!(reading_id: reading2.id, card_id: 40)
+CardDrawing.create!(reading_id: reading3.id, card_id: 73)
+CardDrawing.create!(reading_id: reading4.id, card_id: 14)
+CardDrawing.create!(reading_id: reading5.id, card_id: 18)
 
 puts "🌱 Done seeding!"
