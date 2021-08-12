@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_11_210621) do
+ActiveRecord::Schema.define(version: 2021_08_12_000752) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_08_11_210621) do
     t.string "img_reversed"
     t.string "suit"
     t.string "suit_thumbnail"
-    t.string "type"
+    t.string "arcana_type"
     t.string "name"
     t.string "value"
     t.integer "value_int"
