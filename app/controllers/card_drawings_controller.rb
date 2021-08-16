@@ -10,6 +10,13 @@ class CardDrawingsController < ApplicationController
         render json: cardDrawing
     end
 
+    def create
+        cardDrawing = CardDrawing.create!(card_drawing_params)
+        render json: cardDrawing, status: :created
+    rescue ActiveRecord::RecordInvalid => invalid
+        render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
+    end
+
     private
 
     def card_drawing_params
