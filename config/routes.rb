@@ -6,5 +6,13 @@ Rails.application.routes.draw do
   resources :public_profiles
   resources :personal_profiles
   resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+    #Sign up / User authorization routing
+    post "/signup", to: "users#create"
+    get "/me", to: "users#show" 
+
+    #Log in / Log out routing and session control
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
+
 end
