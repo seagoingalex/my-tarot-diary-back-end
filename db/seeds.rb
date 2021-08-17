@@ -22,37 +22,43 @@ User.create!([
         username: "puddin",
         password: "1234",
         first_name: "Harley",
-        last_name: "Quinn"
+        last_name: "Quinn",
+        email: "clowngirl@gmail.com"
     },
     {
         username: "bloodsport",
         password: "1234",
         first_name: "Robert",
-        last_name: "DuBois"
+        last_name: "DuBois",
+        email: "sharpshooter@gmail.com"
     },
     {
         username: "peacemaker",
         password: "1234",
         first_name: "Christopher",
-        last_name: "Smith"
+        last_name: "Smith",
+        email: "sharpershooter@gmail.com"
     },
     {
         username: "squadleader",
         password: "1234",
         first_name: "Rick",
-        last_name: "Flag"
+        last_name: "Flag",
+        email: "gooseintraining@gmail.com"
     },
     {
         username: "nanaue",
         password: "1234",
         first_name: "King",
-        last_name: "Shark"
+        last_name: "Shark",
+        email: "fisharefriends@gmail.com"
     },
     {
         username: "ratcatcher",
         password: "1234",
         first_name: "Cleo",
-        last_name: "Cazo"
+        last_name: "Cazo",
+        email: "piedpiper@gmail.com"
     }
 ])
 
