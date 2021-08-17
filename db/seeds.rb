@@ -484,7 +484,7 @@ Card.create!([
     },
     {
         id: 25,
-        img: "/images/minor/wands/Wands12Queen.PNG",
+        img: "/images/minor/wands/Wands13Queen.PNG",
         img_reversed: "",
         suit: "wands",
         suit_thumbnail: "/images/thumbnails/WandsThumbnail.png",
@@ -499,7 +499,7 @@ Card.create!([
     },
     {
         id: 26,
-        img: "/images/minor/wands/Wands13King.PNG",
+        img: "/images/minor/wands/Wands14King.PNG",
         img_reversed: "",
         suit: "wands",
         suit_thumbnail: "/images/thumbnails/WandsThumbnail.png",
