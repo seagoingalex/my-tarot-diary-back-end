@@ -10,6 +10,12 @@ class PersonalProfilesController < ApplicationController
         render json: personalProfile
     end
 
+    def my_readings
+        personalProfile = PersonalProfile.find(params[:id])
+        readings = personalProfile.readings
+        render json: readings
+    end
+
     private
 
     def personal_profile_params
