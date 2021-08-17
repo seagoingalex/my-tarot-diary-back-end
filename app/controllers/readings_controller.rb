@@ -20,7 +20,7 @@ class ReadingsController < ApplicationController
     private
 
     def reading_params
-        params.permit(
+        params.require(:reading).permit(
             :read_requester_id, 
             :read_requester_type,
             :reader_id,

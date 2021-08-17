@@ -11,6 +11,7 @@ class CardDrawingsController < ApplicationController
     end
 
     def create
+        # byebug
         cardDrawing = CardDrawing.create!(card_drawing_params)
         render json: cardDrawing, status: :created
     rescue ActiveRecord::RecordInvalid => invalid
@@ -20,7 +21,7 @@ class CardDrawingsController < ApplicationController
     private
 
     def card_drawing_params
-        params.permit(:reading_id, :card_id)
+        params.require(:card_drawing).permit(:reading_id, :card_id)
     end
 
 end
