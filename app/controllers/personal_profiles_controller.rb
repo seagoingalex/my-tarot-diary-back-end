@@ -1,9 +1,9 @@
 class PersonalProfilesController < ApplicationController
 
-    def index
-        personalProfiles = PersonalProfile.all
-        render json: personalProfiles
-    end
+    # def index
+    #     personalProfiles = PersonalProfile.all
+    #     render json: personalProfiles
+    # end
 
     def show
         personalProfile = PersonalProfile.find(params[:id])
