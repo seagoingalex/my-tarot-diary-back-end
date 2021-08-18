@@ -3,4 +3,5 @@ class ReadingSerializer < ActiveModel::Serializer
 
   belongs_to :reader
   belongs_to :read_requester
+  has_many :cards
 end
