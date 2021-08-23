@@ -25,6 +25,12 @@ class ReadingsController < ApplicationController
         render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
     end
 
+    def destroy
+        reading = Reading.find(params[:id])
+        reading.destroy
+        head :no_content
+    end
+
     private
 
     def reading_params
