@@ -1,5 +1,5 @@
 class Friend < ApplicationRecord
     has_many :readings, as: :read_requester
-    has_many :public_profiles, through: :readings, source: :reader, source_type: "PublicProfile"
-
+    # has_many :public_profiles, through: :readings, source: :reader, source_type: "PublicProfile"
+    belongs_to :public_profile
 end
