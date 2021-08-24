@@ -17,6 +17,6 @@ Rails.application.routes.draw do
 
     get "/:id/personal-chart", to: "personal_profiles#my_readings"
     get "/:id/friends", to: "public_profiles#my_friends"
-    get "/:id/public-chart", to: "personal_profiles#my_readings"
+    get "/:id/public-chart", to: "public_profiles#friend_readings"
 
 end
