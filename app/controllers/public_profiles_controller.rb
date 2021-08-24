@@ -18,7 +18,7 @@ class PublicProfilesController < ApplicationController
 
     def my_friends
         publicProfile = PublicProfile.find(params[:id])
-        friends = publicProfile.friends
+        friends = publicProfile.friends.uniq
         render json: friends
     end
 
