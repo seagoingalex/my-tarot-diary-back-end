@@ -10,6 +10,18 @@ class PublicProfilesController < ApplicationController
         render json: publicProfile
     end
 
+    def my_readings
+        publicProfile = PublicProfile.find(params[:id])
+        readings = publicProfile.readings
+        render json: readings
+    end
+
+    def my_friends
+        publicProfile = PublicProfile.find(params[:id])
+        friends = publicProfile.friends
+        render json: friends
+    end
+
     private
 
     def public_profile_params
