@@ -88,31 +88,38 @@ puts "Seeding Friends..."
 Friend.create!([
     {
         first_name: "Bruce",
-        last_name: "Wayne"
+        last_name: "Wayne",
+        public_profile_id: user1.id
     },
     {
         first_name: "Clark",
-        last_name: "Kent"
+        last_name: "Kent",
+        public_profile_id: user1.id
     },
     {
         first_name: "Diana",
-        last_name: "Prince"
+        last_name: "Prince",
+        public_profile_id: user1.id
     },
     {
         first_name: "Barry",
-        last_name: "Allen"
+        last_name: "Allen",
+        public_profile_id: user1.id
     },
     {
         first_name: "J'onn",
-        last_name: "J'onzz"
+        last_name: "J'onzz",
+        public_profile_id: user1.id
     },
     {
         first_name: "John",
-        last_name: "Stewart"
+        last_name: "Stewart",
+        public_profile_id: user1.id
     },
     {
         first_name: "Kendra",
-        last_name: "Saunders"
+        last_name: "Saunders",
+        public_profile_id: user1.id
     }
 
 ])
@@ -1327,6 +1334,50 @@ Reading.create!([
         descriptors:"Relieved!",
         notes:"Thank goodness!"
     },
+    # {
+    #     read_requester_id: friend2.id,
+    #     read_requester_type: "Friend",
+    #     reader_id: public1.id,
+    #     reader_type: "PublicProfile",
+    #     drawing_type:"Single Card",
+    #     question:"How can I set myself up for success?",
+    #     rating: 6,
+    #     descriptors:"Relieved!",
+    #     notes:"Thank goodness!"
+    # },
+    # {
+    #     read_requester_id: friend3.id,
+    #     read_requester_type: "Friend",
+    #     reader_id: public1.id,
+    #     reader_type: "PublicProfile",
+    #     drawing_type:"Single Card",
+    #     question:"How can I set myself up for success?",
+    #     rating: 6,
+    #     descriptors:"Relieved!",
+    #     notes:"Thank goodness!"
+    # },
+    # {
+    #     read_requester_id: friend4.id,
+    #     read_requester_type: "Friend",
+    #     reader_id: public1.id,
+    #     reader_type: "PublicProfile",
+    #     drawing_type:"Single Card",
+    #     question:"How can I set myself up for success?",
+    #     rating: 6,
+    #     descriptors:"Relieved!",
+    #     notes:"Thank goodness!"
+    # },
+    # {
+    #     read_requester_id: friend5.id,
+    #     read_requester_type: "Friend",
+    #     reader_id: public1.id,
+    #     reader_type: "PublicProfile",
+    #     drawing_type:"Single Card",
+    #     question:"How can I set myself up for success?",
+    #     rating: 6,
+    #     descriptors:"Relieved!",
+    #     notes:"Thank goodness!"
+    # },  
     {
         read_requester_id: personal1.id,
         read_requester_type: "PersonalProfile",

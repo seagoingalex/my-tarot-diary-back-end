@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
 
-    get "/:id/chart", to: "personal_profiles#my_readings"
+    get "/:id/personal-chart", to: "personal_profiles#my_readings"
+    get "/:id/friends", to: "public_profiles#my_friends"
+    get "/:id/public-chart", to: "public_profiles#friend_readings"
 
 end
