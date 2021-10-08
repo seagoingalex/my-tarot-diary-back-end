@@ -2,8 +2,9 @@ Arcadia Daily Tarot: A Tarot Card Library, Reader, and Diary Application
 Alex Calvert
 
 !! Instructions for starting app !!
-1. In addition the the back-end directly you are currently accessing, be sure to also access the application's React app files: https://github.com/seagoingalex/my-tarot-diary-front-end
+1. In addition running the back-end directly you are currently accessing, be sure to also access the application's React app files: https://github.com/seagoingalex/my-tarot-diary-front-end
 2. In your terminal for this site backend, type 'rails s' into your terminal, followed by 'npm start' for the site frontend.
+3. While running locally, this application leverages PostgreSQL as its DBM system, which will also need to be run in conjunction with the above. A deployed version of the application is in progress! Instructions to download PostgreSQL can be found here: https://www.postgresql.org/download/
 
 Resources
 - Entity Relationship Diagram (ERD): https://miro.com/app/board/o9J_l2gv54c=/
